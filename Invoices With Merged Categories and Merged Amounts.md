@@ -1,6 +1,5 @@
 
 ## Dirty
----
 
 | Order ID       | Category             | Amount                            |
 | -------------- | -------------------- | --------------------------------- |
@@ -9,8 +8,7 @@
 | CA-2011-131905 | Office Supplies \| Technology \| Technology    | 7.2 \| 42.0186 \| 42.035          |
 | CA-2011-127614 | Accessories \| Tables \| Binders               | 234.45 \| 1256.22 \| 17.46        |
 
-### Clean
-------
+## Clean
 
 | Order ID       | Category        | Amount  |
 | -------------- | --------------- | ------- |
@@ -28,8 +26,7 @@
 | CA-2011-127614 | Tables          | 1256,22 |
 | CA-2011-127614 | Binders         | 17,46   |
 
-### Solution
-------
+## Solution
 
 ```powerquery
 let
