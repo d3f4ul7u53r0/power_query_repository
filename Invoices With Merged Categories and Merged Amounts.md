@@ -42,7 +42,7 @@ let
     #"Changed Type4" = Table.TransformColumnTypes(#"Split Column by Delimiter3",{{"Column4.1", type text}, {"Column4.2", type text}, {"Column4.3", type text}}),
     #"Transposed Table1" = Table.Transpose(#"Changed Type4"),
     #"Filled Down" = Table.FillDown(#"Transposed Table1",{"Column1"}),
-    #"Renamed Columns" = Table.RenameColumns(#"Filled Down",{{"Column1", "OrderID"}, {"Column2", "Category"}, {"Column3", "Amount"}}),
+    #"Renamed Columns" = Table.RenameColumns(#"Filled Down",{{"Column1", "Order ID"}, {"Column2", "Category"}, {"Column3", "Amount"}}),
     #"Replaced Value" = Table.ReplaceValue(#"Renamed Columns",".",",",Replacer.ReplaceText,{"Amount"}),
     #"Changed Type5" = Table.TransformColumnTypes(#"Replaced Value",{{"Amount", type number}})
 in
